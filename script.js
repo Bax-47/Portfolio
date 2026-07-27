@@ -7,13 +7,19 @@ document.addEventListener('DOMContentLoaded', function () {
   function openMenu(e) {
     if (e) e.preventDefault();
     if (mobileMenu) mobileMenu.classList.add('open');
-    document.body.style.overflow = 'hidden';
   }
 
+  // Used by the close (X) button and touchend -- safe to preventDefault here,
+  // these controls have no href/navigation of their own.
   function closeMenu(e) {
     if (e) e.preventDefault();
     if (mobileMenu) mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
+  }
+
+  // Used when a nav link inside the menu is tapped -- must NOT preventDefault,
+  // otherwise the browser cannot jump to the target section.
+  function closeMenuAfterNav() {
+    if (mobileMenu) mobileMenu.classList.remove('open');
   }
 
   if (hamburgerBtn && mobileMenu) {
@@ -27,13 +33,23 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   document.querySelectorAll('.mobile-link, .mobile-talk').forEach(function (link) {
-    link.addEventListener('click', closeMenu);
+    link.addEventListener('click', closeMenuAfterNav);
   });
 
-  // Close menu automatically if window is resized/rotated past the mobile breakpoint
+  // Close the dropdown if the person taps anywhere outside it
+  document.addEventListener('click', function (e) {
+    if (!mobileMenu || !mobileMenu.classList.contains('open')) return;
+    const clickedInsideMenu = mobileMenu.contains(e.target);
+    const clickedHamburger = hamburgerBtn && hamburgerBtn.contains(e.target);
+    if (!clickedInsideMenu && !clickedHamburger) {
+      closeMenuAfterNav();
+    }
+  });
+
+  // Close automatically if window is resized/rotated past the mobile breakpoint
   window.addEventListener('resize', function () {
     if (window.innerWidth > 860 && mobileMenu) {
-      closeMenu();
+      closeMenuAfterNav();
     }
   });
 });

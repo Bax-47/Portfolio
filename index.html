@@ -10,10 +10,9 @@
 </head>
 <body>
 
-<!-- NAV -->
 <header class="nav">
   <div class="nav-inner">
-    <a href="#" class="brand">
+    <a href="#top" class="brand">
       <span class="brand-icon">PS</span>
       <span class="brand-text">
         <span class="brand-name">Prit Soni</span>
@@ -24,72 +23,97 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#certs">Certs</a>
+      <a href="#works">Works</a>
+      <a href="#frameworks">Frameworks</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="#contact" class="btn-cta">Resume</a>
+    <div class="nav-right">
+      <a href="resume.pdf" class="btn-cta" target="_blank">Resume</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-top">
+    <a href="#top" class="brand">
+      <span class="brand-icon">PS</span>
+      <span class="brand-text">
+        <span class="brand-name">Prit Soni</span>
+        <span class="brand-sub">INFORMATION SECURITY</span>
+      </span>
+    </a>
+    <button class="mobile-close" id="mobileCloseBtn" aria-label="Close menu">X</button>
+  </div>
+  <nav class="mobile-links">
+    <a href="#top" class="mobile-link"><span class="mobile-icon">&#9750;</span> Home</a>
+    <a href="#about" class="mobile-link"><span class="mobile-icon">&#9786;</span> About</a>
+    <a href="#skills" class="mobile-link"><span class="mobile-icon">&#9881;</span> Skills</a>
+    <a href="#experience" class="mobile-link"><span class="mobile-icon">&#128188;</span> Experience</a>
+    <a href="#works" class="mobile-link"><span class="mobile-icon">&#128737;</span> Works</a>
+    <a href="#frameworks" class="mobile-link"><span class="mobile-icon">&#128218;</span> Frameworks</a>
+    <a href="#contact" class="mobile-link"><span class="mobile-icon">&#9993;</span> Contact</a>
+  </nav>
+  <div class="mobile-menu-bottom">
+    <div class="mobile-socials">
+      <a href="https://www.linkedin.com/in/bax4647/" target="_blank" aria-label="LinkedIn">in</a>
+      <a href="https://github.com/Bax-47" target="_blank" aria-label="GitHub">&lt;/&gt;</a>
+      <a href="mailto:prits@cpp.edu" aria-label="Email">&#9993;</a>
+    </div>
+    <a href="#contact" class="mobile-talk">Let's Talk &#8594;</a>
+  </div>
+</div>
+
 <section class="hero" id="top">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="terminal">
-        <div class="terminal-bar">
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="terminal-title">whoami.sh</span>
-        </div>
-        <div class="terminal-body">
-          <p><span class="prompt">$</span> whoami</p>
-          <p class="type-line" id="typeLine"></p>
-          <p><span class="prompt">$</span> <span class="cursor">_</span></p>
-        </div>
-      </div>
+  <div class="hero-badges-row">
+    <span class="pill-badge">ISSUE 01 &middot; SECURITY</span>
+    <span class="pill-badge outline">OPEN TO ROLES</span>
+  </div>
 
-      <h1 class="hero-title">Securing systems.<br>One control at a time.</h1>
-      <p class="hero-sub">Master's student in Information Security at Cal Poly Pomona (GPA 4.0). Hands-on across network defense, cloud security, GRC frameworks, and offensive tooling.</p>
+  <h1 class="hero-name">Prit Soni</h1>
+  <p class="hero-tagline">Information Security&nbsp;|&nbsp;Cloud Security&nbsp;|&nbsp;GRC</p>
 
-      <div class="hero-badges">
-        <span class="badge">🎓 GPA 4.0 / 4.0</span>
-        <span class="badge">🛡 AWS Certified</span>
-        <span class="badge">🔧 TryHackMe Active</span>
-      </div>
+  <p class="hero-hook">Real infrastructure secured. Real audits completed. Real risk data analyzed.</p>
+  <p class="hero-desc">Graduate student in Information Security building practical experience across network defense, cloud security, GRC frameworks, and offensive security tooling &mdash; from securing live infrastructure for 1,200+ users to building formal NIST-aligned audit reports.</p>
 
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Get In Touch →</a>
-        <a href="#projects" class="btn-secondary">View Projects</a>
-      </div>
-    </div>
+  <div class="hero-stat-strip">
+    M.S. INFORMATION SECURITY, GPA 4.0 / 4.0 @ CALIFORNIA STATE POLYTECHNIC UNIVERSITY, POMONA
+  </div>
 
-    <div class="hero-right">
-      <div class="stat-card">
-        <div class="stat-num">1,200+</div>
-        <div class="stat-label">USERS SUPPORTED</div>
-      </div>
-      <div class="stat-card dark">
-        <div class="stat-num">20%</div>
-        <div class="stat-label">UPTIME IMPROVED</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">5</div>
-        <div class="stat-label">AUDIT EXCEPTIONS FOUND</div>
-      </div>
-      <div class="stat-card dark">
-        <div class="stat-num">8</div>
-        <div class="stat-label">GRC CATEGORIES BUILT</div>
-      </div>
-    </div>
+  <div class="hero-actions">
+    <a href="#works" class="btn-primary">View Works &#8594;</a>
+    <a href="resume.pdf" target="_blank" class="btn-secondary">&#8681; Resume</a>
+    <a href="#contact" class="btn-dark">&#9993; Contact</a>
   </div>
 </section>
 
-<div class="status-strip">
-  <span class="dot-live"></span>
-  OPEN TO SECURITY, GRC, AND CLOUD INTERNSHIP / CO-OP ROLES
-</div>
+<section class="matrix-wrap">
+  <div class="matrix-console">
+    <div class="matrix-bar">
+      <span>SKILLS.MATRIX</span>
+      <span class="matrix-dots"><i></i><i></i><i></i></span>
+    </div>
+    <div class="matrix-body">
+      <span class="matrix-label">CORE STACK</span>
+      <div class="matrix-grid">
+        <div class="matrix-chip"><span class="matrix-chip-icon">&#127760;</span> Network Security</div>
+        <div class="matrix-chip"><span class="matrix-chip-icon">&#9729;&#65039;</span> Cloud Security (AWS/Azure)</div>
+        <div class="matrix-chip"><span class="matrix-chip-icon">&#127919;</span> Penetration Testing</div>
+        <div class="matrix-chip"><span class="matrix-chip-icon">&#128203;</span> GRC &amp; Auditing</div>
+        <div class="matrix-chip"><span class="matrix-chip-icon">&#128225;</span> SIEM &amp; Monitoring</div>
+        <div class="matrix-chip"><span class="matrix-chip-icon">&#128187;</span> Python / SQL</div>
+      </div>
+      <a href="resume.pdf" target="_blank" class="matrix-cta">VIEW FULL RESUME &#8594;</a>
+    </div>
+  </div>
+  <div class="status-strip">
+    <span class="dot-live"></span>
+    AVAILABLE FOR SECURITY, GRC, CLOUD, AND IT INTERNSHIP / CO-OP ROLES
+  </div>
+</section>
 
-<!-- ABOUT -->
 <section class="section" id="about">
   <div class="eyebrow">// ABOUT</div>
   <h2 class="section-title">About Me</h2>
@@ -99,28 +123,30 @@
     <div class="panel">
       <div class="panel-bar">about.txt</div>
       <div class="panel-body">
-        <p>I'm a graduate student pursuing my M.S. in Information Security at Cal Poly Pomona, with a Computer Engineering background from MGITER, India. My path started hands-on — managing real network infrastructure for over a thousand students — and has grown into cloud security, GRC frameworks, and offensive security tooling.</p>
-        <p>I'm currently the Webmaster and Board Member for FAST, Cal Poly Pomona's Forensics and Security Technology club, and I actively practice on TryHackMe in my own time.</p>
+        <p>I'm a graduate student pursuing my M.S. in Information Security at Cal Poly Pomona (GPA 4.0), with a Computer Engineering background from MGITER, India. I'm targeting roles in Security Analysis, Cloud Security, GRC, and IT Risk.</p>
+        <p>My background combines hands-on network defense with cloud security and governance work &mdash; managing live infrastructure for 1,200+ users, securing AWS and Azure environments, and building a formal audit report using NIST SP 800-53.</p>
+        <p>I'm especially focused on NIST CSF, NIST SP 800-53, and emerging AI regulatory frameworks including the NIST AI RMF, EU AI Act, and CCPA ADMT &mdash; where I built an 8-category GRC framework comparing AWS, Azure, and GCP compliance readiness.</p>
+        <p>What differentiates me is range: I've worked hands-on with offensive tools (Kali Linux, Metasploit, Burp Suite, Nmap) and defensive monitoring (Splunk, Wireshark, tcpdump), while also producing formal audit reports and stakeholder-ready documentation.</p>
       </div>
     </div>
 
     <div class="side-cards">
       <div class="mini-card">
-        <span class="mini-icon">🌐</span>
+        <span class="mini-icon">&#127760;</span>
         <div>
           <strong>Network Defense</strong>
           <p>Firewalls, VPNs, packet analysis, access control at real scale.</p>
         </div>
       </div>
       <div class="mini-card">
-        <span class="mini-icon">☁️</span>
+        <span class="mini-icon">&#9729;&#65039;</span>
         <div>
           <strong>Cloud Security</strong>
           <p>AWS, Azure, compliance-aware architecture and data handling.</p>
         </div>
       </div>
       <div class="mini-card">
-        <span class="mini-icon">📋</span>
+        <span class="mini-icon">&#128203;</span>
         <div>
           <strong>GRC &amp; Audit</strong>
           <p>NIST SP 800-53, AI regulation mapping, formal audit reporting.</p>
@@ -128,9 +154,59 @@
       </div>
     </div>
   </div>
+
+  <div class="process-grid">
+    <div class="process-card">
+      <span class="process-icon">&#128451;</span>
+      <strong>Technical Evidence</strong>
+      <p>Packet captures, network logs, S3 access records, and configuration evidence from real infrastructure work.</p>
+    </div>
+    <div class="process-card light">
+      <span class="process-icon">&#128202;</span>
+      <strong>Risk Translation</strong>
+      <p>Turning audit findings into severity ratings, exceptions, and risk-based remediation recommendations.</p>
+    </div>
+    <div class="process-card">
+      <span class="process-icon">&#128203;</span>
+      <strong>Audit Readiness</strong>
+      <p>NIST SP 800-53 control mapping, formal audit reporting, and exception documentation.</p>
+    </div>
+  </div>
 </section>
 
-<!-- SKILLS -->
+<section class="section" id="stats">
+  <div class="eyebrow">// STATS</div>
+  <h2 class="section-title">Numbers from the work.</h2>
+  <p class="section-sub">Real metrics from internships, coursework, and hands-on projects.</p>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <div class="stat-box-num">10+</div>
+      <div class="stat-box-label">NETWORK DEVICES SECURED</div>
+    </div>
+    <div class="stat-box dark">
+      <div class="stat-box-num">15%</div>
+      <div class="stat-box-label">FEWER UNAUTHORIZED LOGIN ATTEMPTS</div>
+    </div>
+    <div class="stat-box dark">
+      <div class="stat-box-num">30%</div>
+      <div class="stat-box-label">FASTER DOCUMENTATION RETRIEVAL</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-box-num">35+</div>
+      <div class="stat-box-label">DATASETS PROCESSED, 100% ACCURACY</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-box-num">3</div>
+      <div class="stat-box-label">CLOUD PLATFORMS ASSESSED FOR AI COMPLIANCE</div>
+    </div>
+    <div class="stat-box dark">
+      <div class="stat-box-num">257K+</div>
+      <div class="stat-box-label">NETWORK RECORDS ANALYZED FOR RISK</div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="skills">
   <div class="eyebrow">// LOADOUT</div>
   <h2 class="section-title">Skills</h2>
@@ -140,7 +216,7 @@
 
     <div class="skill-row">
       <div class="skill-label">
-        <span class="skill-icon">⚔️</span>
+        <span class="skill-icon">&#9876;&#65039;</span>
         <div>
           <span class="skill-group">GROUP 01</span>
           <strong>Offense &amp; Testing</strong>
@@ -154,7 +230,7 @@
 
     <div class="skill-row">
       <div class="skill-label">
-        <span class="skill-icon">🛡️</span>
+        <span class="skill-icon">&#128737;&#65039;</span>
         <div>
           <span class="skill-group">GROUP 02</span>
           <strong>Defense &amp; Monitoring</strong>
@@ -168,7 +244,7 @@
 
     <div class="skill-row">
       <div class="skill-label">
-        <span class="skill-icon">📊</span>
+        <span class="skill-icon">&#128202;</span>
         <div>
           <span class="skill-group">GROUP 03</span>
           <strong>Compliance &amp; Risk</strong>
@@ -177,12 +253,13 @@
       <div class="skill-tags">
         <span>Risk Management</span><span>Security Auditing</span>
         <span>Security Controls</span><span>Vulnerability Management</span>
+        <span>ISO 27001</span><span>SOC 2</span><span>CRISC</span><span>FERPA</span>
       </div>
     </div>
 
     <div class="skill-row">
       <div class="skill-label">
-        <span class="skill-icon">☁️</span>
+        <span class="skill-icon">&#9729;&#65039;</span>
         <div>
           <span class="skill-group">GROUP 04</span>
           <strong>Cloud &amp; DevOps</strong>
@@ -196,7 +273,7 @@
 
     <div class="skill-row">
       <div class="skill-label">
-        <span class="skill-icon">💻</span>
+        <span class="skill-icon">&#128187;</span>
         <div>
           <span class="skill-group">GROUP 05</span>
           <strong>Programming</strong>
@@ -205,13 +282,13 @@
       <div class="skill-tags">
         <span>Python</span><span>SQL</span><span>Java</span>
         <span>C</span><span>Bash</span><span>PowerShell</span>
+        <span>JavaScript</span><span>Node.js</span><span>HTML/CSS</span>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section class="section" id="experience">
   <div class="eyebrow">// LOGBOOK</div>
   <h2 class="section-title">Experience</h2>
@@ -225,9 +302,9 @@
         <div class="tl-head">
           <div>
             <h3>Network &amp; IT Support Assistant</h3>
-            <span class="tl-org">MGITER — IT Department · Navsari, Gujarat, India</span>
+            <span class="tl-org">MGITER &mdash; IT Department &middot; Navsari, Gujarat, India</span>
           </div>
-          <span class="tl-date">Jun 2023 – Dec 2024</span>
+          <span class="tl-date">Jun 2023 &ndash; Dec 2024</span>
         </div>
         <div class="tl-tags">
           <span>Routers</span><span>Firewalls</span><span>VPN</span><span>Wireshark</span>
@@ -246,9 +323,9 @@
         <div class="tl-head">
           <div>
             <h3>Cloud Computing Intern</h3>
-            <span class="tl-org">UniConverge Technologies Pvt Ltd (UCT) · Bangalore, India</span>
+            <span class="tl-org">UniConverge Technologies Pvt Ltd (UCT) &middot; Bangalore, India</span>
           </div>
-          <span class="tl-date">Apr 2024 – Jun 2024</span>
+          <span class="tl-date">Apr 2024 &ndash; Jun 2024</span>
         </div>
         <div class="tl-tags">
           <span>AWS</span><span>Azure</span><span>Confluence</span><span>Git</span>
@@ -266,9 +343,9 @@
         <div class="tl-head">
           <div>
             <h3>Data Analyst Intern</h3>
-            <span class="tl-org">Solar Secure Solutions · Bangalore, India</span>
+            <span class="tl-org">Solar Secure Solutions &middot; Bangalore, India</span>
           </div>
-          <span class="tl-date">Oct 2023 – Dec 2023</span>
+          <span class="tl-date">Oct 2023 &ndash; Dec 2023</span>
         </div>
         <div class="tl-tags">
           <span>AWS S3</span><span>SQL</span><span>Data Integrity</span>
@@ -285,9 +362,9 @@
         <div class="tl-head">
           <div>
             <h3>Webmaster, Board Member</h3>
-            <span class="tl-org">FAST — Forensics &amp; Security Technology Club · Cal Poly Pomona</span>
+            <span class="tl-org">FAST &mdash; Forensics &amp; Security Technology Club &middot; Cal Poly Pomona</span>
           </div>
-          <span class="tl-date">May 2026 – Present</span>
+          <span class="tl-date">May 2026 &ndash; Present</span>
         </div>
         <div class="tl-tags">
           <span>WordPress</span><span>Security Ops</span><span>Leadership</span>
@@ -301,91 +378,336 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="section" id="projects">
-  <div class="eyebrow">// FIELD WORK</div>
-  <h2 class="section-title">Projects</h2>
-  <p class="section-sub">Security problems, worked end to end.</p>
+<section class="section" id="works">
+  <div class="eyebrow">// WORKS</div>
+  <h2 class="section-title">Works</h2>
+  <p class="section-sub">Security and risk problems, worked end to end with real data.</p>
 
-  <div class="project-grid">
+  <div class="works-grid">
 
-    <div class="project-card">
-      <div class="project-index">01 / 03</div>
-      <h3>Physical Security Audit</h3>
-      <span class="project-sub">Student Data Center · NIST SP 800-53</span>
-      <p>Full physical + operational audit of a student-run data center — access controls, environmental safeguards, backup resilience.</p>
-      <div class="project-tags">
-        <span>NIST SP 800-53</span><span>Audit Reporting</span><span>Risk Analysis</span>
+    <div class="work-card">
+      <div class="work-header">
+        <span>&gt; RISKMATRIX.EXE</span>
+        <span class="work-header-tag">RISK REGISTER</span>
       </div>
-      <div class="project-result">✓ 5 audit exceptions identified</div>
+      <div class="work-body">
+        <div class="work-index">01</div>
+        <h3>RiskMatrix</h3>
+        <span class="work-sub">NETWORK INTRUSION RISK IDENTIFICATION &amp; ASSESSMENT</span>
+
+        <div class="work-pills">
+          <span class="pill red">EXPLOITS &middot; CRITICAL</span>
+          <span class="pill orange">GENERIC &middot; HIGH</span>
+          <span class="pill orange">DOS &middot; HIGH</span>
+          <span class="pill yellow">BACKDOOR &middot; MEDIUM</span>
+        </div>
+
+        <p class="work-desc">A CRISC-aligned IT risk assessment using the UNSW-NB15 network intrusion dataset, scoring nine attack categories by likelihood and impact and mapping the highest-risk patterns to deployable SIEM detection rules.</p>
+
+        <div class="work-stats">
+          <div class="work-stat">257,673 records analyzed</div>
+          <div class="work-stat">164,673 attack records</div>
+          <div class="work-stat">9 categories scored</div>
+          <div class="work-stat">5 SIEM rules built</div>
+        </div>
+
+        <ul class="work-list">
+          <li>Built a documented risk register scoring each attack category by likelihood &times; impact, ranking Exploits, Generic, and DoS as top-priority threats.</li>
+          <li>Validated impact scores independently against CVSS severity ratings for 174,000+ named exploits.</li>
+          <li>Designed 5 transparent SIEM detection rules &mdash; one achieved 100% precision with zero false positives across 47,802 records.</li>
+        </ul>
+
+        <div class="work-tags">
+          <span>IT Risk Assessment</span><span>CRISC</span><span>SIEM</span><span>Python</span><span>Risk Register</span>
+        </div>
+
+        <div class="work-meta">Coursework &middot; GBA 6740, Privacy &amp; Security Risk Management</div>
+      </div>
     </div>
 
-    <div class="project-card dark">
-      <div class="project-index">02 / 03</div>
-      <h3>AI Regulatory Compliance</h3>
-      <span class="project-sub">Cloud Provider GRC Study</span>
-      <p>Built an 8-category GRC framework mapping NIST AI RMF, EU AI Act, and CCPA ADMT across AWS, Azure, and GCP.</p>
-      <div class="project-tags">
-        <span>NIST AI RMF</span><span>EU AI Act</span><span>CCPA</span>
+    <div class="work-card dark">
+      <div class="work-header">
+        <span>&gt; VENDORCHECK.EXE</span>
+        <span class="work-header-tag">TPRM REVIEW</span>
       </div>
-      <div class="project-result">✓ Azure ranked #1 in compliance tooling</div>
+      <div class="work-body">
+        <div class="work-index">02</div>
+        <h3>VendorCheck</h3>
+        <span class="work-sub">THIRD-PARTY VENDOR RISK ASSESSMENT</span>
+
+        <div class="work-pills">
+          <span class="pill orange">SOC 2 &middot; EXCEPTIONS</span>
+          <span class="pill red">ISO 27001 &middot; NO SOA</span>
+          <span class="pill red">AI DISCLOSURE &middot; FLAG</span>
+          <span class="pill orange">SIG LITE &middot; UNVERIFIED</span>
+        </div>
+
+        <p class="work-desc">A full third-party risk review of a SaaS vendor handling FERPA-protected student data, evaluating evidence quality across five document types and issuing a formal risk recommendation to procurement.</p>
+
+        <div class="work-stats">
+          <div class="work-stat">5 evidence docs reviewed</div>
+          <div class="work-stat">142 questionnaire items</div>
+          <div class="work-stat">4 risk vectors mapped</div>
+          <div class="work-stat">HIGH RISK verdict</div>
+        </div>
+
+        <ul class="work-list">
+          <li>Triaged 5 vendor evidence documents (SOC 2, ISO 27001, pen test summary, SIG Lite, AI disclosure), flagging a self-reported 142-question questionnaire with zero supporting evidence.</li>
+          <li>Mapped 4 risk vectors to consequences and university-side controls, covering offshore access, AI subprocessor use, and unresolved SOC 2 exceptions.</li>
+          <li>Issued a formal HIGH RISK classification with a documented remediation path for procurement.</li>
+        </ul>
+
+        <div class="work-tags">
+          <span>Vendor Risk</span><span>TPRM</span><span>SOC 2</span><span>FERPA</span><span>ISO 27001</span>
+        </div>
+
+        <div class="work-meta">Coursework &middot; Privacy &amp; Security Risk Management</div>
+      </div>
     </div>
 
-    <div class="project-card">
-      <div class="project-index">03 / 03</div>
-      <h3>Stock Monitor</h3>
-      <span class="project-sub">Real-Time DevOps &amp; SDN Application</span>
-      <p>Containerized real-time stock monitoring system with live alerting and a full CI/CD pipeline.</p>
-      <div class="project-tags">
-        <span>FastAPI</span><span>Docker</span><span>Redis</span><span>GitHub Actions</span>
+    <div class="work-card">
+      <div class="work-header">
+        <span>&gt; JUICESHOP.EXE</span>
+        <span class="work-header-tag">WEB APP PENTEST</span>
       </div>
-      <div class="project-result">✓ Full CI/CD automation</div>
+      <div class="work-body">
+        <div class="work-index">03</div>
+        <h3>JuiceShop Pentest</h3>
+        <span class="work-sub">MANUAL SQL INJECTION &amp; XSS TESTING</span>
+
+        <div class="work-pills">
+          <span class="pill red">SQLI BYPASS &middot; CONFIRMED</span>
+          <span class="pill orange">XSS POC &middot; CONFIRMED</span>
+          <span class="pill green">ENVIRONMENT &middot; CONTAINED</span>
+        </div>
+
+        <p class="work-desc">Hands-on web application penetration test against OWASP Juice Shop using Burp Suite, manually detecting and verifying SQL Injection and Cross-Site Scripting vulnerabilities in a controlled lab.</p>
+
+        <div class="work-stats">
+          <div class="work-stat">2 vulnerability classes</div>
+          <div class="work-stat">Burp Suite Repeater</div>
+          <div class="work-stat">Kali Linux + Docker</div>
+        </div>
+
+        <ul class="work-list">
+          <li>Captured and manually modified HTTP login requests in Burp Suite Repeater to bypass authentication via SQL Injection.</li>
+          <li>Demonstrated a proof-of-concept Cross-Site Scripting payload without targeting real users or data.</li>
+          <li>Documented every step with reproducible commands and screenshots for peer verification.</li>
+        </ul>
+
+        <div class="work-tags">
+          <span>Burp Suite</span><span>SQL Injection</span><span>XSS</span><span>Kali Linux</span><span>Docker</span>
+        </div>
+
+        <div class="work-meta">Coursework &middot; GBA 6750, Web Application Security</div>
+      </div>
+    </div>
+
+    <div class="work-card dark">
+      <div class="work-header">
+        <span>&gt; SDCAUDIT.EXE</span>
+        <span class="work-header-tag">PHYSICAL AUDIT</span>
+      </div>
+      <div class="work-body">
+        <div class="work-index">04</div>
+        <h3>SDC Audit</h3>
+        <span class="work-sub">NIST SP 800-53 PHYSICAL SECURITY AUDIT</span>
+
+        <div class="work-pills">
+          <span class="pill orange">ENTRY CONTROL &middot; MEDIUM</span>
+          <span class="pill green">ENVIRONMENTAL &middot; LOW</span>
+          <span class="pill orange">WORK AREA &middot; MEDIUM</span>
+          <span class="pill orange">BACKUP/DR &middot; MEDIUM</span>
+          <span class="pill green">CHANGE MGMT &middot; LOW</span>
+        </div>
+
+        <p class="work-desc">Full physical and operational security audit of a student-run data center, testing five control areas against NIST SP 800-53 Rev. 5 and producing formal audit workpapers.</p>
+
+        <div class="work-stats">
+          <div class="work-stat">5 control areas tested</div>
+          <div class="work-stat">5 audit exceptions</div>
+          <div class="work-stat">NIST SP 800-53 Rev. 5</div>
+        </div>
+
+        <ul class="work-list">
+          <li>Conducted on-site walkthroughs, staff interviews, and control testing across entry, environmental, work area, backup/DR, and change management controls.</li>
+          <li>Documented 5 formal workpapers with audit steps, control objectives, testing procedures, and issue ratings.</li>
+          <li>Produced a formal audit report with risk-based remediation recommendations including visitor logging and AD/NAS separation.</li>
+        </ul>
+
+        <div class="work-tags">
+          <span>NIST SP 800-53</span><span>Audit Reporting</span><span>Risk Analysis</span>
+        </div>
+
+        <div class="work-meta">Coursework &middot; Fundamentals of IT Auditing</div>
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
+<section class="section" id="frameworks">
+  <div class="eyebrow">// REFERENCES</div>
+  <h2 class="section-title">Frameworks</h2>
+  <p class="section-sub">Each reference standard, paired with the practical evidence and audit work it implies.</p>
+
+  <div class="fw-grid">
+
+    <div class="fw-card">
+      <div class="fw-top"><span>01 &middot; FRAMEWORK</span><span class="fw-ver">v1</span></div>
+      <h3>NIST SP 800-53</h3>
+      <span class="fw-sub">DETAILED SECURITY CONTROL ASSESSMENT &amp; MAPPING</span>
+      <p>Access control, audit logging, configuration management, incident response, risk assessment.</p>
+      <div class="fw-applied">
+        <span class="fw-applied-label">APPLIED IN</span>
+        Physical Security Audit &mdash; 5 findings mapped to Rev. 5 controls
+      </div>
+    </div>
+
+    <div class="fw-card dark">
+      <div class="fw-top"><span>02 &middot; FRAMEWORK</span><span class="fw-ver">v1</span></div>
+      <h3>NIST AI RMF</h3>
+      <span class="fw-sub">AI RISK MANAGEMENT &amp; GOVERNANCE</span>
+      <p>Govern, map, measure, and manage risk across the AI system lifecycle.</p>
+      <div class="fw-applied">
+        <span class="fw-applied-label">APPLIED IN</span>
+        AI Regulatory Compliance GRC Study &mdash; AWS/Azure/GCP comparison
+      </div>
+    </div>
+
+    <div class="fw-card">
+      <div class="fw-top"><span>03 &middot; FRAMEWORK</span><span class="fw-ver">v1</span></div>
+      <h3>EU AI Act</h3>
+      <span class="fw-sub">EU AI REGULATORY COMPLIANCE</span>
+      <p>Risk-tiered obligations for AI systems deployed to or affecting EU users.</p>
+      <div class="fw-applied">
+        <span class="fw-applied-label">APPLIED IN</span>
+        AI Regulatory Compliance GRC Study &mdash; 8-category framework
+      </div>
+    </div>
+
+    <div class="fw-card dark">
+      <div class="fw-top"><span>04 &middot; FRAMEWORK</span><span class="fw-ver">v1</span></div>
+      <h3>CCPA / ADMT</h3>
+      <span class="fw-sub">CALIFORNIA CONSUMER PRIVACY &amp; AUTOMATED DECISIONS</span>
+      <p>Consumer data rights, deletion obligations, and automated decision-making disclosure.</p>
+      <div class="fw-applied">
+        <span class="fw-applied-label">APPLIED IN</span>
+        AI GRC Study + California Delete Act coursework analysis
+      </div>
+    </div>
+
+    <div class="fw-card">
+      <div class="fw-top"><span>05 &middot; FRAMEWORK</span><span class="fw-ver">v1</span></div>
+      <h3>SOC 2</h3>
+      <span class="fw-sub">TRUST SERVICES EVIDENCE &amp; CONTROL OWNER READINESS</span>
+      <p>Security, availability, confidentiality, processing integrity, privacy.</p>
+      <div class="fw-applied">
+        <span class="fw-applied-label">APPLIED IN</span>
+        VendorCheck &mdash; reviewed a live SOC 2, flagged 3 unresolved exceptions
+      </div>
+    </div>
+
+    <div class="fw-card dark">
+      <div class="fw-top"><span>06 &middot; FRAMEWORK</span><span class="fw-ver">v1</span></div>
+      <h3>ISO 27001</h3>
+      <span class="fw-sub">INFORMATION SECURITY MANAGEMENT &amp; EVIDENCE ALIGNMENT</span>
+      <p>Information security controls, access management, supplier security, policy governance.</p>
+      <div class="fw-applied">
+        <span class="fw-applied-label">APPLIED IN</span>
+        VendorCheck &mdash; flagged a cert issued with no Statement of Applicability
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <section class="section" id="certs">
   <div class="eyebrow">// ACHIEVEMENTS</div>
   <h2 class="section-title">Certifications</h2>
 
   <div class="cert-row">
-    <div class="cert-chip">🏆 AWS Certified Cloud Practitioner <span>Apr 2026</span></div>
-    <div class="cert-chip">🏆 IBM Cybersecurity Analyst Specialization</div>
-    <div class="cert-chip">🏆 Google Cybersecurity Specialization</div>
-    <div class="cert-chip">🎯 TryHackMe Active Learner</div>
-    <div class="cert-chip">🌐 IELTS Academic — Band 7.0</div>
+    <div class="cert-chip">&#127942; CompTIA Security+ <span>Exam scheduled</span></div>
+    <div class="cert-chip">&#127942; AWS Certified Cloud Practitioner <span>Apr 2026</span></div>
+    <div class="cert-chip">&#127942; IBM Cybersecurity Analyst Specialization</div>
+    <div class="cert-chip">&#127942; Google Cybersecurity Specialization</div>
+    <div class="cert-chip">&#127919; TryHackMe Active Learner</div>
+    <div class="cert-chip">&#127760; IELTS Academic &mdash; Band 7.0</div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="section contact-section" id="contact">
-  <div class="eyebrow">// CONNECT</div>
-  <h2 class="section-title">Let's Talk Security</h2>
-  <p class="section-sub">Open to internships and co-ops in security, GRC, and cloud.</p>
+  <div class="eyebrow">// SIGN-OFF</div>
+  <h2 class="section-title">Let's build secure, audit-ready systems.</h2>
+  <p class="section-sub">Open to Security, GRC, Cloud, and IT Audit internship and co-op opportunities.</p>
 
-  <div class="contact-panel">
-    <a href="mailto:prits@cpp.edu" class="contact-link">
-      <span>✉</span> prits@cpp.edu
-    </a>
-    <a href="tel:+19094384178" class="contact-link">
-      <span>☎</span> +1 (909) 438-4178
-    </a>
-    <a href="https://www.linkedin.com/in/bax4647/" target="_blank" class="contact-link">
-      <span>in</span> linkedin.com/in/bax4647
-    </a>
-    <a href="https://github.com/Bax-47" target="_blank" class="contact-link">
-      <span>&lt;/&gt;</span> github.com/Bax-47
-    </a>
-    <a href="https://tryhackme.com/p/Bax4647" target="_blank" class="contact-link">
-      <span>🚩</span> tryhackme.com/p/Bax4647
-    </a>
+  <div class="contact-panels">
+
+    <div class="contact-card">
+      <div class="contact-card-bar">
+        CONTACT.CARD
+        <span class="matrix-dots"><i></i><i></i><i></i></span>
+      </div>
+      <div class="contact-card-body">
+        <div class="contact-card-name">
+          <span class="brand-icon">PS</span>
+          <div>
+            <strong>Prit Soni</strong>
+            <span>Information Security &middot; GRC &middot; Cloud</span>
+          </div>
+        </div>
+        <div class="contact-info-grid">
+          <div class="contact-info-box">
+            <span class="ci-label">EMAIL</span>
+            <span class="ci-value">prits@cpp.edu</span>
+          </div>
+          <div class="contact-info-box">
+            <span class="ci-label">LOCATION</span>
+            <span class="ci-value">Pomona, CA</span>
+          </div>
+        </div>
+        <div class="contact-status-box">
+          <span class="dot-live"></span>
+          Available for Security, GRC, Cloud, and IT Audit roles.
+        </div>
+      </div>
+    </div>
+
+    <div class="send-message">
+      <div class="contact-card-bar dark">
+        SEND.MESSAGE
+        <span class="send-channels">CHANNELS</span>
+      </div>
+      <div class="send-body">
+        <a href="https://www.linkedin.com/in/bax4647/" target="_blank" class="send-row">
+          <span>in LINKEDIN</span> <span>&#8594;</span>
+        </a>
+        <a href="https://github.com/Bax-47" target="_blank" class="send-row">
+          <span>&lt;/&gt; GITHUB</span> <span>&#8594;</span>
+        </a>
+        <a href="mailto:prits@cpp.edu" class="send-row">
+          <span>&#9993; EMAIL</span> <span>&#8594;</span>
+        </a>
+        <a href="resume.pdf" target="_blank" class="send-row highlight">
+          <span>&#8681; DOWNLOAD RESUME</span> <span>&#8594;</span>
+        </a>
+        <p class="send-note">Replies usually within a business day.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <footer class="footer">
-  <p>Built by Prit Soni · Pomona, CA</p>
+  <div class="footer-inner">
+    <span>DESIGNED AND BUILT FOR SECURITY, GRC, AND CLOUD OPPORTUNITIES.</span>
+    <span class="footer-right">
+      PRIT SONI &middot; ISSUE 01 &middot; 2026
+      <a href="https://www.linkedin.com/in/bax4647/" target="_blank" aria-label="LinkedIn">in</a>
+      <a href="https://github.com/Bax-47" target="_blank" aria-label="GitHub">&lt;/&gt;</a>
+      <a href="mailto:prits@cpp.edu" aria-label="Email">&#9993;</a>
+    </span>
+  </div>
 </footer>
 
 <script src="script.js"></script>

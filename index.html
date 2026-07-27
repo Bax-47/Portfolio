@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prit Soni — Information Security</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">
+      <span class="brand-icon">PS</span>
+      <span class="brand-text">
+        <span class="brand-name">Prit Soni</span>
+        <span class="brand-sub">INFORMATION SECURITY</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn-cta">Resume</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="terminal-title">whoami.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="type-line" id="typeLine"></p>
+          <p><span class="prompt">$</span> <span class="cursor">_</span></p>
+        </div>
+      </div>
+
+      <h1 class="hero-title">Securing systems.<br>One control at a time.</h1>
+      <p class="hero-sub">Master's student in Information Security at Cal Poly Pomona (GPA 4.0). Hands-on across network defense, cloud security, GRC frameworks, and offensive tooling.</p>
+
+      <div class="hero-badges">
+        <span class="badge">🎓 GPA 4.0 / 4.0</span>
+        <span class="badge">🛡 AWS Certified</span>
+        <span class="badge">🔧 TryHackMe Active</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get In Touch →</a>
+        <a href="#projects" class="btn-secondary">View Projects</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="stat-card">
+        <div class="stat-num">1,200+</div>
+        <div class="stat-label">USERS SUPPORTED</div>
+      </div>
+      <div class="stat-card dark">
+        <div class="stat-num">20%</div>
+        <div class="stat-label">UPTIME IMPROVED</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">5</div>
+        <div class="stat-label">AUDIT EXCEPTIONS FOUND</div>
+      </div>
+      <div class="stat-card dark">
+        <div class="stat-num">8</div>
+        <div class="stat-label">GRC CATEGORIES BUILT</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="status-strip">
+  <span class="dot-live"></span>
+  OPEN TO SECURITY, GRC, AND CLOUD INTERNSHIP / CO-OP ROLES
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="eyebrow">// ABOUT</div>
+  <h2 class="section-title">About Me</h2>
+  <p class="section-sub">From network closets to cloud consoles.</p>
+
+  <div class="about-grid">
+    <div class="panel">
+      <div class="panel-bar">about.txt</div>
+      <div class="panel-body">
+        <p>I'm a graduate student pursuing my M.S. in Information Security at Cal Poly Pomona, with a Computer Engineering background from MGITER, India. My path started hands-on — managing real network infrastructure for over a thousand students — and has grown into cloud security, GRC frameworks, and offensive security tooling.</p>
+        <p>I'm currently the Webmaster and Board Member for FAST, Cal Poly Pomona's Forensics and Security Technology club, and I actively practice on TryHackMe in my own time.</p>
+      </div>
+    </div>
+
+    <div class="side-cards">
+      <div class="mini-card">
+        <span class="mini-icon">🌐</span>
+        <div>
+          <strong>Network Defense</strong>
+          <p>Firewalls, VPNs, packet analysis, access control at real scale.</p>
+        </div>
+      </div>
+      <div class="mini-card">
+        <span class="mini-icon">☁️</span>
+        <div>
+          <strong>Cloud Security</strong>
+          <p>AWS, Azure, compliance-aware architecture and data handling.</p>
+        </div>
+      </div>
+      <div class="mini-card">
+        <span class="mini-icon">📋</span>
+        <div>
+          <strong>GRC &amp; Audit</strong>
+          <p>NIST SP 800-53, AI regulation mapping, formal audit reporting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="eyebrow">// LOADOUT</div>
+  <h2 class="section-title">Skills</h2>
+  <p class="section-sub">Tools and frameworks, grouped by function.</p>
+
+  <div class="skills-console">
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="skill-icon">⚔️</span>
+        <div>
+          <span class="skill-group">GROUP 01</span>
+          <strong>Offense &amp; Testing</strong>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span>Kali Linux</span><span>Metasploit</span><span>Burp Suite</span>
+        <span>Nmap</span><span>SQLmap</span><span>John the Ripper</span>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="skill-icon">🛡️</span>
+        <div>
+          <span class="skill-group">GROUP 02</span>
+          <strong>Defense &amp; Monitoring</strong>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span>Splunk</span><span>Wireshark</span><span>tcpdump</span>
+        <span>NIST CSF</span><span>NIST SP 800-53</span><span>IDS/IPS</span>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="skill-icon">📊</span>
+        <div>
+          <span class="skill-group">GROUP 03</span>
+          <strong>Compliance &amp; Risk</strong>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span>Risk Management</span><span>Security Auditing</span>
+        <span>Security Controls</span><span>Vulnerability Management</span>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="skill-icon">☁️</span>
+        <div>
+          <span class="skill-group">GROUP 04</span>
+          <strong>Cloud &amp; DevOps</strong>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span>AWS</span><span>Azure</span><span>Databricks</span><span>Docker</span>
+        <span>Kubernetes</span><span>REST APIs</span><span>Git/GitHub</span>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <div class="skill-label">
+        <span class="skill-icon">💻</span>
+        <div>
+          <span class="skill-group">GROUP 05</span>
+          <strong>Programming</strong>
+        </div>
+      </div>
+      <div class="skill-tags">
+        <span>Python</span><span>SQL</span><span>Java</span>
+        <span>C</span><span>Bash</span><span>PowerShell</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="eyebrow">// LOGBOOK</div>
+  <h2 class="section-title">Experience</h2>
+  <p class="section-sub">Where the skills got tested.</p>
+
+  <div class="timeline">
+
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div>
+            <h3>Network &amp; IT Support Assistant</h3>
+            <span class="tl-org">MGITER — IT Department · Navsari, Gujarat, India</span>
+          </div>
+          <span class="tl-date">Jun 2023 – Dec 2024</span>
+        </div>
+        <div class="tl-tags">
+          <span>Routers</span><span>Firewalls</span><span>VPN</span><span>Wireshark</span>
+        </div>
+        <ul>
+          <li>Managed network infrastructure of 10+ routers, switches, firewalls, and VPN gateways for 1,200+ students and faculty.</li>
+          <li>Used Wireshark packet analysis to improve network uptime by 20% and cut unauthorized login attempts by 15%.</li>
+          <li>Documented recurring issues and built troubleshooting guides for new student assistants.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div>
+            <h3>Cloud Computing Intern</h3>
+            <span class="tl-org">UniConverge Technologies Pvt Ltd (UCT) · Bangalore, India</span>
+          </div>
+          <span class="tl-date">Apr 2024 – Jun 2024</span>
+        </div>
+        <div class="tl-tags">
+          <span>AWS</span><span>Azure</span><span>Confluence</span><span>Git</span>
+        </div>
+        <ul>
+          <li>Applied security-control knowledge across AWS and Azure to prevent data-handling errors and maintain compliance.</li>
+          <li>Cut documentation retrieval time by 30% through better Confluence organization.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div>
+            <h3>Data Analyst Intern</h3>
+            <span class="tl-org">Solar Secure Solutions · Bangalore, India</span>
+          </div>
+          <span class="tl-date">Oct 2023 – Dec 2023</span>
+        </div>
+        <div class="tl-tags">
+          <span>AWS S3</span><span>SQL</span><span>Data Integrity</span>
+        </div>
+        <ul>
+          <li>Processed 35+ datasets into secure AWS S3 with 100% accuracy, validating integrity through SQL queries.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-marker"></div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <div>
+            <h3>Webmaster, Board Member</h3>
+            <span class="tl-org">FAST — Forensics &amp; Security Technology Club · Cal Poly Pomona</span>
+          </div>
+          <span class="tl-date">May 2026 – Present</span>
+        </div>
+        <div class="tl-tags">
+          <span>WordPress</span><span>Security Ops</span><span>Leadership</span>
+        </div>
+        <ul>
+          <li>Manage cppfast.org, enforcing access control, patching, and backups; resolved a 3-year-stale events calendar.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="eyebrow">// FIELD WORK</div>
+  <h2 class="section-title">Projects</h2>
+  <p class="section-sub">Security problems, worked end to end.</p>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="project-index">01 / 03</div>
+      <h3>Physical Security Audit</h3>
+      <span class="project-sub">Student Data Center · NIST SP 800-53</span>
+      <p>Full physical + operational audit of a student-run data center — access controls, environmental safeguards, backup resilience.</p>
+      <div class="project-tags">
+        <span>NIST SP 800-53</span><span>Audit Reporting</span><span>Risk Analysis</span>
+      </div>
+      <div class="project-result">✓ 5 audit exceptions identified</div>
+    </div>
+
+    <div class="project-card dark">
+      <div class="project-index">02 / 03</div>
+      <h3>AI Regulatory Compliance</h3>
+      <span class="project-sub">Cloud Provider GRC Study</span>
+      <p>Built an 8-category GRC framework mapping NIST AI RMF, EU AI Act, and CCPA ADMT across AWS, Azure, and GCP.</p>
+      <div class="project-tags">
+        <span>NIST AI RMF</span><span>EU AI Act</span><span>CCPA</span>
+      </div>
+      <div class="project-result">✓ Azure ranked #1 in compliance tooling</div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-index">03 / 03</div>
+      <h3>Stock Monitor</h3>
+      <span class="project-sub">Real-Time DevOps &amp; SDN Application</span>
+      <p>Containerized real-time stock monitoring system with live alerting and a full CI/CD pipeline.</p>
+      <div class="project-tags">
+        <span>FastAPI</span><span>Docker</span><span>Redis</span><span>GitHub Actions</span>
+      </div>
+      <div class="project-result">✓ Full CI/CD automation</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section" id="certs">
+  <div class="eyebrow">// ACHIEVEMENTS</div>
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="cert-row">
+    <div class="cert-chip">🏆 AWS Certified Cloud Practitioner <span>Apr 2026</span></div>
+    <div class="cert-chip">🏆 IBM Cybersecurity Analyst Specialization</div>
+    <div class="cert-chip">🏆 Google Cybersecurity Specialization</div>
+    <div class="cert-chip">🎯 TryHackMe Active Learner</div>
+    <div class="cert-chip">🌐 IELTS Academic — Band 7.0</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="eyebrow">// CONNECT</div>
+  <h2 class="section-title">Let's Talk Security</h2>
+  <p class="section-sub">Open to internships and co-ops in security, GRC, and cloud.</p>
+
+  <div class="contact-panel">
+    <a href="mailto:prits@cpp.edu" class="contact-link">
+      <span>✉</span> prits@cpp.edu
+    </a>
+    <a href="tel:+19094384178" class="contact-link">
+      <span>☎</span> +1 (909) 438-4178
+    </a>
+    <a href="https://www.linkedin.com/in/bax4647/" target="_blank" class="contact-link">
+      <span>in</span> linkedin.com/in/bax4647
+    </a>
+    <a href="https://github.com/Bax-47" target="_blank" class="contact-link">
+      <span>&lt;/&gt;</span> github.com/Bax-47
+    </a>
+    <a href="https://tryhackme.com/p/Bax4647" target="_blank" class="contact-link">
+      <span>🚩</span> tryhackme.com/p/Bax4647
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Built by Prit Soni · Pomona, CA</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
